@@ -30,7 +30,7 @@ if($result && $result->num_rows > 0){       // Verifico le righe ottenute
 
     }
 
-    var_dump($rooms);
+    // var_dump($rooms);
 
     // Check funzionamento Query
 } else if ($result){
