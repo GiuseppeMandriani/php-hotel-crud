@@ -1,3 +1,10 @@
+<?php // Get Data rooms
+
+require_once __DIR__ . '/partials/scripts/get_rooms.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
