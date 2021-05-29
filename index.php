@@ -1,4 +1,4 @@
-<?php // Get Data rooms
+<?php // Get Data rooms and clients
 
 require_once __DIR__ . '/partials/scripts/get_rooms.php';
 require_once __DIR__ . '/partials/scripts/get_clients.php';

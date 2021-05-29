@@ -1,6 +1,6 @@
 <?php // Get Data clients
 
-require_once __DIR__ . '/partials/scripts/get_single_room.php';
+require_once __DIR__ . '/partials/scripts/get_single_client.php';
 
 ?>
 
@@ -21,7 +21,7 @@ require_once __DIR__ . '/partials/templates/head.php'
     <?php } else { ?>
         <h2 class="my-4 text-center">No Client Found</h2>
     <?php } ?>
-        <h1 class="my-4">Client <?php echo $client['name'].$client['lastname']; ?></h1>
+        <h1 class="my-4">Client: <?php echo $client['name']?> <?php echo $client['lastname']; ?></h1>
 
         <table class="table table-dark table-striped">
             <thead>
@@ -36,12 +36,12 @@ require_once __DIR__ . '/partials/templates/head.php'
             </thead>
             <tbody>
                 <tr>
-                    <td><?php echo $room['id']; ?></td>
-                    <td><?php echo $room['name']; ?></td>
-                    <td><?php echo $room['lastname']; ?></td>
-                    <td><?php echo $room['date_of_birth']; ?></td>
-                    <td><?php echo $room['document_type']; ?></td>
-                    <td><?php echo $room['document_number']; ?></td>
+                    <td><?php echo $client['id']; ?></td>
+                    <td><?php echo $client['name']; ?></td>
+                    <td><?php echo $client['lastname']; ?></td>
+                    <td><?php echo $client['date_of_birth']; ?></td>
+                    <td><?php echo $client['document_type']; ?></td>
+                    <td><?php echo $client['document_number']; ?></td>
                 </tr>
 
             </tbody>

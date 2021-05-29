@@ -12,10 +12,12 @@ require_once __DIR__ . '/database.php';
 // Ottenere informazioni delle stanze 
 
 // Costruisco la query
-$sql = "SELECT * FROM `ospiti`";
+$sql = "SELECT * FROM ospiti";
 
+// var_dump($conn);
 // Run the query
 $result = $conn->query($sql);
+// var_dump($result);
 
 // Check in base ai dati ottenuti
 
@@ -30,7 +32,7 @@ if($result && $result->num_rows > 0){       // Verifico le righe ottenute
 
     }
 
-     var_dump($clients);
+    //  var_dump($clients);
 
     // Check funzionamento Query
 } else if ($result){

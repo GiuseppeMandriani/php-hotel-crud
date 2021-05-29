@@ -14,6 +14,7 @@ require_once __DIR__ . '/database.php';
 // Costruisco la query
 $sql = "SELECT `stanze`.`id`, `stanze`.`room_number` FROM `stanze`";
 
+
 // Run the query
 $result = $conn->query($sql);
 
@@ -42,7 +43,7 @@ if($result && $result->num_rows > 0){       // Verifico le righe ottenute
 
 // Chiusura Connessione DATABASE
 
-$conn->close();
+// $conn->close();
 
 
 
